@@ -48,6 +48,41 @@ body {
   margin-left: auto;
 }
 
+.fa-submit-button {
+  background: url("../Assets/submit.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 43px;
+  width: 43px;
+  display: block;
+}
+
+.fa-instagram,
+.fa-tiktok,
+.fa-spotify {
+  height: 45px;
+  width: 45px;
+  display: block;
+}
+
+.fa-instagram {
+  background: url("../Assets/instagram.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fa-tiktok {
+  background: url("../Assets/tiktok.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fa-spotify {
+  background: url("../Assets/spotify.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* Header */
 .header {
   background: var(--site-color-black);
@@ -466,6 +501,194 @@ body {
   height: 25px !important;
 }
 
-.flickity-button-icon {
- 
+.footer {
+  background-color: var(--site-color-black);
+  color: var(--site-color-white);
+  padding: 50px 18px 12px;
+}
+@media screen and (min-width: 1025px) {
+  .footer {
+    padding: 50px 50px 20px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .footer__flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .footer__contact-block {
+    width: 40%;
+  }
+}
+
+.footer__header {
+  font-family: "Fahkwang", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 275;
+  line-height: 72px;
+  letter-spacing: 0.534px;
+  text-transform: uppercase;
+}
+
+.footer__contact-form {
+
+}
+
+.footer__contact-form-input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: var(--site-color-black);
+  border: none;
+  border-bottom: 1px solid var(--site-color-white);
+  color: var(--site-color-white);
+  font-family: Montserrat;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer__contact-form-input::placeholder {
+  opacity: 1;
+  color: rgba(236, 234, 229, 0.60);
+  font-family: Montserrat;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+input.footer__contact-form-input {
+  height: 50px;
+}
+
+.footer__textarea-submit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+textarea.footer__contact-form-input {
+  height: 150px;
+  resize: none;
+  width: 80%;
+  margin-bottom: 0;
+}
+
+.footer__contact-form-submit {
+  width: 45px;
+  height: 45px;
+  background: transparent;
+  border: none;
+}
+
+.footer__contact-form-submit:hover {
+  cursor: pointer;
+}
+
+.footer__social-block {
+  margin: 80px 0;
+}
+@media screen and (min-width: 769px) {
+  .footer__social-block {
+    margin-top: 23px;
+    width: 400px;
+  }
+}
+
+.footer__social-header {
+  color: #E0DBD2;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 769px) {
+  .footer__social-header {
+    text-align: right;
+  }
+}
+
+.footer__social-subheader {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+@media screen and (min-width: 769px) {
+  .footer__social-subheader {
+    text-align: right;
+  }
+}
+
+.footer__social-icons-header {
+  color: #E0DBD2;
+  font-family: Fahkwang;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+@media screen and (min-width: 769px) {
+  .footer__social-icons-header {
+    text-align: right;
+    margin-top: 160px;
+  }
+}
+
+.footer__social-icons {
+  display: flex;
+}
+@media screen and (min-width: 769px) {
+  .footer__social-icons {
+    justify-content: flex-end;
+  }
+}
+
+.footer__social-icons > a {
+  margin-right: 20px;
+}
+@media screen and (min-width: 769px) {
+  .footer__social-icons > a {
+    margin-right: 0;
+    margin-left: 20px;;
+  }
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__links > a {
+  text-decoration: none;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--site-color-white);
+}
+@media screen and (min-width: 1025px) {
+  .footer__links > a {
+    font-size: 12px;
+  }
+}
+
+.footer__links > a:nth-of-type(2) {
+  margin: 0 40px 0 auto;
 }
