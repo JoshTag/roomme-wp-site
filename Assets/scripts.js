@@ -1,3 +1,13 @@
+var elem = document.querySelector('.triple-column-carousel__carousel-container');
+var flkty = new Flickity( elem, {
+  // options
+  cellAlign: 'left',
+  contain: true,
+  pageDots: false,
+  wrapAround: true,
+  watchCSS: true
+});
+
 document.querySelectorAll('.image-and-accordion__accordion-header').forEach(header => {
   header.addEventListener('click', function() {
     const accordionItem = this.parentElement;
