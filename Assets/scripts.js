@@ -1,12 +1,27 @@
-var elem = document.querySelector('.triple-column-carousel__carousel-container');
-var flkty = new Flickity( elem, {
-  // options
+let carouselElement = document.querySelector('.triple-column-carousel__carousel-container');
+let flktyCarousel = new Flickity( carouselElement, {
   cellAlign: 'left',
   contain: true,
   pageDots: false,
   wrapAround: true,
   watchCSS: true
 });
+
+let slideshowElement = document.querySelector('.image-and-accordion__image-side');
+let flktySlideshow = new Flickity( slideshowElement, {
+  cellAlign: 'left',
+  contain: true,
+  pageDots: false,
+  wrapAround: true,
+  draggable: false,
+  autoPlay: 2500,
+  pauseAutoPlayOnHover: false,
+  fade: true,
+  imagesLoaded: true,
+  prevNextButtons: false,
+  adaptiveHeight: true
+});
+
 
 document.querySelectorAll('.image-and-accordion__accordion-header').forEach(header => {
   header.addEventListener('click', function() {
