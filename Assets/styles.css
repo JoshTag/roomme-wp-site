@@ -442,6 +442,7 @@ body {
   position: relative;
   border-radius: 8px;
   overflow: hidden;
+  pointer-events: none;
 }
 @media screen and (min-width: 769px) {
   .image-and-accordion__image-side {
@@ -503,6 +504,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  border-radius: 0;
 }
 @media screen and ( min-width: 769px ) {
   .triple-column-carousel__carousel-cell {
